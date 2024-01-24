@@ -12,11 +12,10 @@ export const Providers: React.FC<{
 }> = ({ children }) => {
   return (
     <ThemeProvider>
-      <AuthProvider>
+       <AuthProvider>
         <FilterProvider>
           <CartProvider>{children}</CartProvider>
         </FilterProvider>
-        <CartProvider>{children}</CartProvider>
       </AuthProvider>
     </ThemeProvider>
   )
